@@ -1,0 +1,153 @@
+/* ==========================================
+   NOUR.A.F
+   Hero Animations
+========================================== */
+
+
+/* ==========================
+   Initial Reveal States
+========================== */
+
+
+.hero-tag,
+.hero h1,
+.hero-description,
+.hero-btn{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+}
+
+
+/* ==========================
+   Active Hero State
+   Added by JavaScript
+========================== */
+
+
+.hero.loaded .hero-tag{
+
+    animation:
+   fadeUp 1.6s .4s cubic-bezier(.22,.61,.36,1) forwards;
+
+}
+
+
+.hero.loaded h1{
+
+    animation:
+    fadeUp 1.8s .6s cubic-bezier(.22,.61,.36,1) forwards;
+
+}
+
+
+.hero.loaded .hero-description{
+
+    animation:
+    fadeUp 1.8s .9s cubic-bezier(.22,.61,.36,1) forwards;
+
+}
+
+
+.hero.loaded .hero-btn{
+
+    animation:
+    fadeUp 1.8s 1.2s cubic-bezier(.22,.61,.36,1) forwards;
+
+}
+
+
+
+/* ==========================
+   Background Motion
+========================== */
+
+
+.hero-background{
+
+    animation:
+
+    heroZoom 25s ease infinite alternate;
+
+}
+
+
+
+/* ==========================
+   Keyframes
+========================== */
+
+
+@keyframes fadeUp{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+@keyframes heroZoom{
+
+
+    from{
+
+        transform:scale(1.05);
+
+    }
+
+
+    to{
+
+        transform:scale(1.12);
+
+    }
+
+
+}
+
+
+.hero-content{
+
+    animation:
+
+    heroFloat 8s ease-in-out infinite alternate;
+
+}
+
+
+@keyframes heroFloat{
+
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+
+    to{
+
+        transform:translateY(-12px);
+
+    }
+
+}

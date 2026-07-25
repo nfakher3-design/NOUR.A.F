@@ -1,0 +1,135 @@
+/* ==========================================
+   NOUR.A.F Design System
+   ========================================== */
+
+:root{
+
+    /* ===== Colors - Neutral ===== */
+
+    --bg: #ECEBE8;
+    --surface: #F8F8F6;
+
+    --primary: #555555;
+    --secondary: #888888;
+
+    --text: #1E1E1E;
+    --text-light: #6F6F6F;
+
+    --border: #D8D8D8;
+
+    --white: #FFFFFF;
+    --black: #111111;
+
+
+    /* ===== Architecture ===== */
+
+    --architecture-primary:#D69898;
+     --architecture-bg:#FAF0F0;
+    --architecture-surface:#FFFFFF;
+     --architecture-accent:#B97878;  
+
+
+    /* ===== Art ===== */
+
+    --art-primary:#710b0b;
+--art-bg:#F8EAEA;
+--art-surface:#FFFFFF;
+--art-secondary:#c73030;
+--art-accent:#5d0404;
+
+   
+    /* ===== Informatics ===== */
+
+    --info-primary:#EAEAEA;
+    --info-bg:#121212;
+    --info-surface:#1E1E1E;
+
+
+    /* ===== Radius ===== */
+
+    --radius-sm:12px;
+    --radius-md:20px;
+    --radius-lg:32px;
+    --radius-xl:50px;
+
+
+    /* ===== Shadows ===== */
+
+    --shadow-sm:0 5px 15px rgba(0,0,0,.08);
+
+    --shadow-md:0 15px 40px rgba(0,0,0,.12);
+
+    --shadow-lg:0 25px 60px rgba(0,0,0,.18);
+
+
+    /* ===== Spacing ===== */
+
+    --space-xs:8px;
+    --space-sm:16px;
+    --space-md:24px;
+    --space-lg:40px;
+    --space-xl:64px;
+    --space-xxl:120px;
+
+
+    /* ===== Transition ===== */
+
+    --transition:.6s cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+/* ==========================================
+   THEMES
+========================================== */
+
+
+body[data-theme="architecture"]{
+
+   --bg:var(--architecture-bg);
+
+    --surface:var(--architecture-surface);
+
+    --primary:var(--architecture-primary);
+
+    --secondary:#E8BABA;
+
+    --text:#1E1E1E;
+
+    --border:#E6CACA;
+
+}
+
+
+body[data-theme="art"]{
+
+   --bg:var(--art-bg);
+
+    --surface:var(--art-surface);
+
+    --primary:var(--art-primary);
+
+    --secondary:var(--art-secondary);
+
+    --text:#1E1E1E;
+
+    --border:#E8CACA;
+}
+
+
+
+body[data-theme="informatics"]{
+
+   --bg:#121212;
+
+    --surface:#1E1E1E;
+
+    --primary:#EAEAEA;
+
+    --secondary:#777777;
+
+    --text:#EAEAEA;
+
+    --border:#333333;
+
+}

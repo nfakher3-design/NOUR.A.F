@@ -1,0 +1,336 @@
+/* ==========================================
+   NOUR.A.F
+   Loading Screen
+========================================== */
+
+
+.loader{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:10000;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--bg);
+
+    transition:opacity 1s ease,
+               visibility 1s ease;
+
+}
+
+
+.loader-inner{
+
+    text-align:center;
+
+}
+
+
+.loader-mark{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    font-family:"Outfit",sans-serif;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    animation:
+    loaderPulse 2s ease-in-out infinite;
+
+}
+
+
+.loader h1{
+
+    margin-top:var(--space-md);
+
+    font-size:clamp(2rem,5vw,4rem);
+
+    letter-spacing:4px;
+
+}
+
+
+.loader p{
+
+    margin-top:var(--space-sm);
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-size:13px;
+
+}
+
+
+.loader p span{
+
+    margin-inline:10px;
+
+}
+
+
+/* Hidden State */
+
+.loader.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+
+/* Animation */
+
+@keyframes loaderPulse{
+
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* ==========================================
+   HERO BUTTON
+========================================== */
+
+.hero-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:32px;
+
+    padding:16px 32px;
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    border-radius:var(--radius-xl);
+
+    font-family:"Outfit",sans-serif;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+
+.hero-btn span{
+
+    transition:transform .4s ease;
+
+}
+
+
+.hero-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+
+.hero-btn:hover span{
+
+    transform:translateY(5px);
+
+}
+
+
+
+/* ==========================================
+   THEME TRANSITION
+========================================== */
+
+
+button,
+a,
+.header,
+.navbar,
+.world-card,
+.world-content,
+.logo-mark{
+
+    transition:
+    background-color var(--transition),
+    color var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition),
+    transform var(--transition);
+
+}
+
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    background:var(--black);
+
+    color:var(--white);
+
+    padding:var(--space-xxl) 0 var(--space-lg);
+
+    text-align:center;
+
+}
+
+
+.footer-inner{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:var(--space-md);
+
+    margin-bottom:var(--space-lg);
+
+}
+
+
+.footer-brand h2{
+
+    font-size:clamp(2rem,5vw,3rem);
+
+    letter-spacing:2px;
+
+}
+
+
+.footer-brand p{
+
+    color:rgba(255,255,255,.6);
+
+    margin-top:8px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-size:13px;
+
+}
+
+
+.footer-social{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+.footer-social a{
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:50%;
+
+    color:var(--white);
+
+    font-size:18px;
+
+    transition:var(--transition);
+
+}
+
+
+.footer-social a:hover{
+
+    background:var(--white);
+
+    color:var(--black);
+
+    transform:translateY(-4px);
+
+}
+
+
+.footer small{
+
+    display:block;
+
+    color:rgba(255,255,255,.4);
+
+    font-size:12px;
+
+    letter-spacing:1px;
+
+    padding-top:var(--space-md);
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+    width:min(92%,1400px);
+
+    margin:0 auto;
+
+}

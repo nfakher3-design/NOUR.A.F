@@ -1,0 +1,168 @@
+/* ==========================================
+   NOUR.A.F
+   Animation System
+========================================== */
+
+
+/* Fade In */
+
+.fade-in{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:var(--transition);
+
+}
+
+
+.fade-in.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/* Scale */
+
+.scale-in{
+
+    opacity:0;
+
+    transform:scale(.9);
+
+    transition:var(--transition);
+
+}
+
+
+.scale-in.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+
+
+/* Slide Up */
+
+.slide-up{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:var(--transition);
+
+}
+
+
+.slide-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/* Floating */
+
+.float{
+
+    animation:floating 6s ease-in-out infinite;
+
+}
+
+
+@keyframes floating{
+
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* Theme Transition */
+
+.theme-transition{
+
+    transition:
+
+    background-color .8s ease,
+
+    color .8s ease,
+
+    border-color .8s ease,
+
+    box-shadow .8s ease;
+
+}
+
+
+
+/* Loader Exit */
+
+.loader.hide .loader-inner{
+
+    animation:loaderExit .8s ease forwards;
+
+}
+
+
+@keyframes loaderExit{
+
+
+    from{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+
+    to{
+
+        opacity:0;
+
+        transform:scale(1.2);
+
+    }
+
+}
+
+
+
+
+.hero.loaded .hero-background{
+
+    transform:scale(1);
+
+}

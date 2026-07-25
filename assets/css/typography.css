@@ -1,0 +1,69 @@
+/* ==========================================
+   TYPOGRAPHY
+========================================== */
+
+body{
+
+    font-family:"Inter",sans-serif;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+}
+
+html[lang="ar"] body{
+
+    font-family:"Alexandria",sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:"Outfit",sans-serif;
+
+    font-weight:700;
+
+    line-height:1.1;
+
+}
+
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] h4,
+html[lang="ar"] h5,
+html[lang="ar"] h6{
+
+    font-family:"Alexandria",sans-serif;
+
+}
+
+h1{
+
+    font-size:clamp(3rem,7vw,6rem);
+
+}
+
+h2{
+
+    font-size:clamp(2.2rem,5vw,4rem);
+
+}
+
+h3{
+
+    font-size:clamp(1.5rem,3vw,2rem);
+
+}
+
+p{
+
+    color: #bdbaba;;
+
+}
