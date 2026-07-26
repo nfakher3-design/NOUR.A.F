@@ -1,7 +1,7 @@
 const themes = {
 
    architecture: {
-    primary: "#513745",
+    primary: "#6f4c5e",
     bg: "#EDE7E9",
     surface: "#513745",
     text: "#1E1E1E",
@@ -9,7 +9,7 @@ const themes = {
 },
 
 art: {
-    primary: "#270505",
+    primary: "#550808",
     bg: "#EAEAEA",
     surface: "#270505",
     text: "#1E1E1E",
