@@ -14,14 +14,26 @@ async function loadComponent(id, file){
 
     if(!container) return;
 
-    const parts = window.location.pathname.split("/").filter(Boolean);
+    const isGitHubPages = window.location.hostname.includes("github.io");
 
-    if(parts.length && parts[parts.length - 1].includes(".")){
-        parts.pop();
+    let basePath;
+
+    if(isGitHubPages){
+
+        basePath = "/nour-a-f/";
+
+    }else{
+
+        const parts = window.location.pathname.split("/").filter(Boolean);
+
+        if(parts.length && parts[parts.length - 1].includes(".")){
+            parts.pop();
+        }
+
+        const depth = parts.length;
+        basePath = depth === 0 ? "" : "../".repeat(depth);
+
     }
-
-    const depth = parts.length;
-    const basePath = depth === 0 ? "" : "../".repeat(depth);
 
     try{
 
