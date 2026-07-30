@@ -40,9 +40,20 @@ async function loadComponent(id, file){
         const response = await fetch(`${basePath}components/${file}`);
         container.innerHTML = await response.text();
 
+        if(id === "navbar"){
+
+            container.querySelectorAll("[data-root-link]").forEach(link => {
+
+                const originalHref = link.getAttribute("href");
+                link.setAttribute("href", basePath + originalHref);
+
+            });
+
+        }
+
     }catch(error){
 
-        console.error(`${file} could not be loaded.`, error);
+        console.error($`{file} could not be loaded.`, error);
 
     }
 
